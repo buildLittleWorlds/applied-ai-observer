@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Mode for Writers: What AI Coding Can Teach Us - The Applied AI Observer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The Applied AI Observer</h1>
+    <nav>
+      <a href="index.html">Posts</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Plan Mode for Writers: What AI Coding Can Teach Us</h2>
+      <p class="meta">January 16, 2026</p>
+
+      <p>Here's a principle that guides this newsletter: developments in AI coding are a preview of what's coming for AI writing. Coders have been pushing these tools harder and longer than writers have. They've discovered failure modes, developed workarounds, and built workflows that actually work. Writers can learn from their experiments instead of repeating them.</p>
+
+      <p>This week, developer Matt Pocock released a <a href="https://youtu.be/WNx-s-RxVxk">video about plan mode</a>—a feature in Claude Code that prevents the AI from writing any code until it has thoroughly explored the codebase and produced a detailed plan. Pocock describes himself as a former AI skeptic who now runs every piece of code through a plan-execute-test loop. His insight isn't just about coding. It's about how to get useful work from AI systems that forget everything between sessions.</p>
+
+      <blockquote>
+        <p>"I want you to imagine for a second that you had a colleague who every time they made a commit forgot everything they'd ever learned about the repo. How would you make that colleague productive? Well, probably what you tell them is to explore the repo first before they went and made any changes."</p>
+        <cite>— Matt Pocock</cite>
+      </blockquote>
+
+      <h3>The Core Insight</h3>
+
+      <p>Plan mode works by disabling the AI's ability to write files. The agent can read the codebase, search documentation, and ping URLs—but it can't change anything. This constraint forces the AI into exploration mode. It loads up context, identifies relevant patterns, and produces a plan document before making any modifications.</p>
+
+      <p>Pocock argues this helps both the AI and the developer. The AI gets the context it needs to avoid stupid mistakes. The developer gets clarity about what they actually want—because, as the Pragmatic Programmer puts it, "no one ever knows what they want." Planning becomes a form of rubber ducking: you iterate with the AI until both of you understand the requirements.</p>
+
+      <p>Three specific suggestions from the video:</p>
+
+      <p><strong>1. Force concision.</strong> Pocock adds a line to his configuration file: "Make the plan extremely concise. Sacrifice grammar for the sake of concision." This takes 2,000-word plans down to 400 words. You can scan them quickly and spot problems without drowning in text.</p>
+
+      <p><strong>2. Demand questions.</strong> His config also says: "At the end of each plan, give me a list of unresolved questions to answer if any." This nudges the AI toward what he calls "an exploratory, slightly worried, paranoid mode"—which surfaces assumptions you'd otherwise discover too late.</p>
+
+      <p><strong>3. Make planning iterative.</strong> The AI suggests something, you push back, it adjusts. By the end of this loop, both parties have a clearer picture. Then execution becomes simple—you can let the AI work on autopilot because the hard thinking already happened.</p>
+
+      <h3>Translating to Research</h3>
+
+      <p>Research has the same problem coding does: the AI doesn't know your context. It doesn't know what you've already read, what angle you're pursuing, what sources you trust, or what arguments you've already considered and rejected. Without that context, it makes assumptions that waste your time.</p>
+
+      <p>A "plan mode" for research might look like this: before the AI searches for anything, it interviews you. What's the question you're actually trying to answer? What do you already know? What kinds of sources would be credible for your purposes? What would make a source not worth reading? The AI builds a research plan—specific searches to run, types of sources to prioritize, questions to answer—and you approve or adjust before it executes.</p>
+
+      <p>The analogy holds tightly here. Pocock's "force concision" principle applies: a research plan that lists twenty possible sources is less useful than one that prioritizes three and explains why. "Demand questions" works too: the AI should surface what it doesn't know about your needs before burning tokens on searches that miss the mark.</p>
+
+      <p>Where the analogy might strain: research is more open-ended than coding. A bug fix has clear success criteria. A research question might evolve as you learn more. Plan mode in research might need more frequent check-ins—not one big plan upfront, but a series of smaller plans as the inquiry develops.</p>
+
+      <h3>Translating to Writing</h3>
+
+      <p>Writing has the same amnesiac-colleague problem. Every time you start a new session, the AI doesn't remember your voice, your argument, your audience, or the choices you've already made. It will guess—and often guess wrong.</p>
+
+      <p>A "plan mode" for writing would prevent drafting until the AI has explored what you're trying to do. What's the argument? What's the structure? What's the voice? What must be included, and what's out of scope? The AI asks questions, you answer, and together you produce a writing plan before any prose gets generated.</p>
+
+      <p>Pocock's principles translate directly. "Force concision" means the writing plan should be shorter than the piece itself—a structural outline, not a rough draft in disguise. "Demand questions" means the AI should ask about audience, stakes, and constraints before assuming defaults. "Make planning iterative" means the plan evolves through dialogue until it feels solid enough to execute.</p>
+
+      <p>Where it might break down: writing is messier than coding. Sometimes you don't know what you think until you write it. A plan can become a cage that prevents discovery. The writing equivalent of plan mode might need an escape hatch—a way to abandon the plan when the draft reveals something better.</p>
+
+      <h3>What This Newsletter Will Do</h3>
+
+      <p>This coding-to-writing translation is going to be a recurring feature here. When developers figure out something useful—a workflow, a configuration trick, a mental model—I'll ask whether it applies to research and writing. Sometimes the analogy will be tight. Sometimes it will break in interesting ways. Either outcome is worth exploring.</p>
+
+      <p>The bet is that AI coding is about eighteen months ahead of AI writing in terms of workflow sophistication. Developers have been forced to figure this out because broken code is obvious and immediate. Broken writing is subtle and easy to ship. But the underlying challenge is the same: how do you collaborate with a system that's powerful but forgetful, capable but assumption-prone?</p>
+
+      <p>Plan mode is one answer. Interview first, plan second, execute last. It's not the only answer, and it's not always the right answer. But it's a pattern worth testing—in code, in research, and in writing.</p>
+
+      <h3>What to Watch</h3>
+
+      <p>Look for whether writing tools start building plan modes of their own. Notice whether researchers develop formal planning workflows or keep working ad hoc. And pay attention to how your own AI-assisted writing changes when you add an explicit planning step—whether it feels more controlled, more efficient, or more constrained.</p>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>Tracking important AI and Applied AI stories.</p>
+  </footer>
+</body>
+</html>
